@@ -17,12 +17,24 @@
         {
             "name": "yunwuxin",
             "email": "448901948@qq.com"
-        }        
+        }
     ],
     "require": {
-        "php": "^7.2",
+        "php": ">=7.1.0",
         "topthink/framework": "^6.0.0",
-        "topthink/think-orm": "^2.0"
+        "topthink/think-orm": "^2.0",
+        "topthink/think-multi-app": "^1.0",
+        "topthink/think-view": "^1.0",
+        "topthink/think-image": "^1.0",
+        "topthink/think-captcha": "^3.0",
+        "topthink/think-worker": "^3.0",
+        "topthink/think-filesystem": "^1.0",
+        "wechatpay/wechatpay": "^1.4",
+        "overtrue/wechat": "~4.0",
+        "aliyuncs/oss-sdk-php": "^2.6",
+        "qcloud/cos-sdk-v5": "^2.0",
+        "qiniu/php-sdk": "^7.2",
+        "ext-json": "*"
     },
     "require-dev": {
         "symfony/var-dumper": "^4.2",
@@ -37,7 +49,10 @@
         }
     },
     "config": {
-        "preferred-install": "dist"
+        "preferred-install": "dist",
+        "allow-plugins": {
+            "easywechat-composer/easywechat-composer": true
+        }
     },
     "scripts": {
         "post-autoload-dump": [
